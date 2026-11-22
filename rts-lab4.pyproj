@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{3F899B6A-35DD-48EE-8B5C-A11A34933AF3}</ProjectGuid>
+    <Name>rts-lab4</Name>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\main.py</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <SearchPath>src</SearchPath>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="data\" />
+    <Folder Include="docs\" />
+    <Compile Include="src\*.py" />
+    <Content Include="data\*.csv" />
+    <Content Include="docs\*.docx" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
