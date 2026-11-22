@@ -1,0 +1,4 @@
+name,priority,bits,period_ms,deadline_ms
+M1,1,1000,10,10
+M2,2,2000,20,20
+M3,3,4000,50,50
